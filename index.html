@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Currency Exchange</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="all">
+<div class="header">
+ <h1>GIHOZO-COMPANY</h1>
+<p>CURRENCY EXCHANGE PLATFORM</p>
+</div>
+
+<div class="container"> 
+<div class="form-group">
+<div class="amount-box">
+<label>Amount</label>
+<input type="number" id="amount" placeholder="enter Amount" value="">
+</div>
+
+<div class="currency-box">
+ <label>From</label>
+<select id="fromCurrency">
+ <option value="USD">USD - $</option>
+<option value="RWF">Rwanda - RWF</option>
+<option value="EUR">Euro - €</option>
+ </select>
+</div>
+
+ <div class="currency-box">
+ <label>To</label>
+<select id="toCurrency">
+<option value="RWF">Rwanda - RWF</option>
+ <option value="USD">USD - $</option>
+ <option value="EUR">Euro - €</option>
+</select>
+</div>
+</div>
+<div class="botton">
+<button onclick="convertCurrency()">Convert</button>
+ <div class="result">
+<small>Result</small>
+<h2 id="result">0</h2>
+</div>
+</div>
+
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
